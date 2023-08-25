@@ -11,6 +11,13 @@ function generatePassword() {
   var lowercase = confirm("Your password needs a lowercase letter! Click OK to continue");
 
 
+  // Password Characters
+  var numeric ="0123456789";
+  var uppercaseABC = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+  var lowercaseABC = "abcdefghijklmnopqrstuvwxyz";
+  var specialSymbols = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";
+  var multiselect = "[]"; 
+}
 
 
 // Write password to the #password input
