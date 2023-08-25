@@ -41,9 +41,28 @@ function generatePassword() {
         alert ("Must select at least one type of character")
        }
   
+    // character created based off their types 
+    var selectedChars = "";
+    if (getNumber) {
+      selectedChars += numericChar;
+    }
+    if (getSpecialCharacters) {
+      selectedChars += specialChar;
+    }
+    if (getLowerCase) {
+      selectedChars += lowerCaseChar;
+    }
+    if (getUpperCase) {
+      selectedChars += upperCaseChar;
+    }
 
+// password generator
+var password = "";
+for (var i = 0; i < characterLength; i++) {
+  var randomGen = Math.floor(Math.random() * selectedChars.length);
+  password += selectedChars.charAt(randomGen);
+}
 
+return password;
 
-    
-      
     } 
